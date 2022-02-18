@@ -1,0 +1,148 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+   padding-top:15px;
+	background:url("mountains.jpg") ;
+	background-size:cover;
+	background-position:relative;
+	height:95vh;
+	background-repeat: no-repeat;
+}
+.airplane{
+    width: 500px;
+	position:absolute;
+	bottom:0;
+	right:-100px;
+	animation:plan 4s linear  infinite;
+
+}
+.logo{
+	padding-left: 15px;
+	padding-top: 15px;
+	text-shadow: #444;
+}
+  .logo h1{
+	color:white;
+
+}
+.header{
+	padding-top:5px;
+	background:gray;
+}
+header::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
+nav{
+	float:right;
+	padding-top: 10px;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style:armenian;
+}
+nav li{
+	display:inline-block;
+	margin-left:70px;
+	
+	position:relative;
+	padding-right:5px;
+
+}
+nav a{
+	color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:17px;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+nav a:hover{
+
+	color:rgb(0, 132, 255);
+}
+nav a ::before{
+	content:'';
+	display:block;
+	height:5px;
+	width:100%;
+	background-color:#444;
+	position:absolute;
+	top:0;
+	width:0%;
+	transition:all ease-in-out 250ms;
+	
+}
+nav a:hover::before{
+	width:100%;
+}
+.row{
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	
+}
+.row-1 {
+	padding-top: 130px;
+	padding-left:500px;
+    color:white;
+}
+.row-1 .col-2 p{
+	padding-top: 20px;
+    color: rgb(26, 76, 109);
+
+}
+.row-1 .col-3 a{
+	padding-left: 30px;
+}
+.row-2{
+	flex-basis:50;
+	min-width:300px;
+	
+}
+
+.col-3 img{
+	max-width:5;
+	padding:10px 1000px;
+	padding-top: 40px;
+}
+
+.row-2 h2{
+	font-size:50px;
+	line-height:60px;
+	margin:25px 0;
+	align-items: center;
+}
+.btn{
+	display:inline-block;
+	background:orange;
+	color:white;
+	padding:10px 30px;
+	margin:30px 0;
+	border-radius:30px;
+	transition:background0.5s;
+}
+.btn:hover{
+	background:#e26565;
+}
+
+
+@keyframes plan{
+	0%{
+      transform:translateX(0px) translateY(0px)rotate(0deg);
+    }
+    30%{
+      transform:translateX(-400px) translateY(0px) rotate(0deg);
+    }
+    100%{
+      transform:translateX(-1500px) translateY(-200px) rotate(20deg);
+}
+
+}
